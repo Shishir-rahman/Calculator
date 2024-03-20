@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cal-cart{
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-size: 0;
+}
+
+.cal-cart:hover{
+ 
+}
+
+.cal-head > input{
+    width: 345px;
+    height: 100px;
+    text-align: right;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    
+}
+
+.cal-body{
+    
+}
+
+
+.btn{
+    width: 25%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #89CFF0;
+    border: 1PX solid white;
+}
+
+.btn:hover{
+    background-color: #FFAA33;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.btn-style{
+    width: 25%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0096FF;
+    border: 1PX solid white;
+}
+
+.btn-style:hover{
+    background-color: #FFAA33;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.btn-style-2{
+    width: 25%;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FF7F50;
+    border: 1PX solid white;
+}
+
+.btn-style-2:hover{
+    background-color: #FCF55F;
+    color: #FF7F50;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
