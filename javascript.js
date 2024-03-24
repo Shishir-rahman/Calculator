@@ -8,7 +8,6 @@ function addition(x,y){
 
 }
 
-
 function subtraction(x,y){
     let result = x - y;
     document.write("Sub = " + result + "<br>")
@@ -24,6 +23,7 @@ function divided(x, y){
     let result = x/y;
     document.write("Divided = "+ result + "<br>")
 }
+
 function modulus(x,y){
     let result = x%y;
     document.write("Modulus = "+ result + "<br>")
@@ -56,3 +56,47 @@ modulus(50,21);
     let result = x + y;
     document.write("Total sum = "+ result + "<br>");
 })(10, 15);
+
+
+let num = [12,5,9,6,15,3];
+    sum = 0;
+
+    numSort = num.sort(function(a,b){
+        return a-b;
+    });
+
+document.write(numSort + "<br>");
+
+
+for(a=0; a<=5; a++){
+    //document.write(" "+num[a]);
+    sum = sum + num[a];
+    
+    //document.write(sum);
+}
+
+document.write(sum + "<br>" + "<br>");
+
+let names = ["Imran", "Sujon", "Sujoy", "Mehedi", "Shishir"]
+    nameShort = names.sort();
+
+    document.write(nameShort + "<br>");
+
+
+
+let scores = [68, 15, 33, 6, 75, 92, 45]
+
+function highestScore(){
+    let max = [0];
+    for(a=1; a<= scores.length; a++){
+        if(max < scores[a]){
+            max = scores[a]
+        }
+    }
+    //return max;
+    document.write(max);
+}
+
+highestScore(scores);
+//document.write(highestScore(scores));
+    
