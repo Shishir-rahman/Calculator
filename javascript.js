@@ -87,16 +87,35 @@ let names = ["Imran", "Sujon", "Sujoy", "Mehedi", "Shishir"]
 let scores = [68, 15, 33, 6, 75, 92, 45]
 
 function highestScore(){
-    let max = [0];
+    let max = scores[0];
     for(a=1; a<= scores.length; a++){
         if(max < scores[a]){
             max = scores[a]
         }
     }
     //return max;
-    document.write(max);
+    document.write(max + "<br>");
 }
 
 highestScore(scores);
 //document.write(highestScore(scores));
+
+
+
+let ran = [["Tamim", 8350],["Sakib", 7435],["Mushfiq", 7760],["Shanto", 1700]]
+
+function highestRan(){
+   let maxRanner = ran[0][0];
+         maxRan = ran[0][1];
+
+    for (let a=1; a<ran.length; a++){
+            if(maxRan < ran[a][1]){
+                maxRan = ran[a][1];
+                maxRanner = ran[a][0];
+            }
+        }
+        document.write("Hightest Ran: "+maxRanner +" "+ maxRan);
+    }
     
+    
+highestRan(ran);
