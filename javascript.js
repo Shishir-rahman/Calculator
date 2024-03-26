@@ -114,8 +114,32 @@ function highestRan(){
                 maxRanner = ran[a][0];
             }
         }
-        document.write("Hightest Ran: "+maxRanner +" "+ maxRan);
+        document.write("Hightest Ran: "+maxRanner +" "+ maxRan + "<br>" + "<br>");
     }
     
     
 highestRan(ran);
+
+
+// guess number
+
+let numberOfWin = 0;
+let numberOfLost = 0;
+
+for(i=1; i<=5; i++){
+
+    let guessNumber = +prompt("Enter the guess number between 1 to 5");
+    let rendomNumber = Math.floor(Math.random()*5) + 1;
+
+    if(rendomNumber==guessNumber){
+        console.log("Win");
+        numberOfWin++;
+    }
+    else{
+        console.log("Lost");
+        numberOfLost++;
+    }
+}
+
+document.write("Total Win: " + numberOfWin + "<br>");
+document.write("Total Lost: " + numberOfLost + "<br>");
