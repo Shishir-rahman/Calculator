@@ -11,7 +11,7 @@
         <h1>Calculator</h1>
         <div class="cal-cart">
             <div class="cal-head">
-                <input type="text" id="header" maxlength="10">
+                <input type="text" id="result" maxlength="10" readonly>
             </div>
             <div class="cal-body">
                 <div class="btn-row">
@@ -33,7 +33,7 @@
                     <input type="button" class="btn-style" value="-">
                 </div>
                 <div class="btn-row">
-                    <input type="button" class="btn" id="one" value="1">
+                    <input type="button" onclick="btn1()" class="btn" id="one" value="1">
                     <input type="button" class="btn" id="two" value="2">
                     <input type="button" class="btn" id="three" value="3">
                     <input type="button" class="btn-style" value="+">
@@ -47,6 +47,8 @@
             </div>
         </div>
     </div>
+
+    <p id="test"></p>
 
     <div>
         <p id="demo"></p>
