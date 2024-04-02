@@ -166,3 +166,31 @@ highestRan(ran);
 
 // document.write("Total Win: " + numberOfWin + "<br>");
 // document.write("Total Lost: " + numberOfLost + "<br>");
+
+
+for(let i=0; i<3; i++){
+    document.querySelectorAll(".btn-music")[i].addEventListener("click", function(){
+        let txt = this.innerHTML;
+
+        switch(txt){
+            case "Bangla Music":
+                var audio = new Audio("./Music/05 - Arnob - Bhalobasha Tar Por (music.com.bd).mp3");
+                audio.play();
+                break;
+
+            case "English Music":
+                 var audio = new Audio("./Music/dj-wise_hit-run-remix.mp3");
+                audio.play();
+                break;
+
+            case "Urdu Music":
+                var audio = new Audio("./Music/Tu-Suroor-Rohail-Sheikh.mp3");
+                audio.play();
+                break;
+        }
+    });
+}
+
+function ply_pos(){
+    audio.pause();
+}
