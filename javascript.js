@@ -194,3 +194,10 @@ for(let i=0; i<3; i++){
 function ply_pos(){
     audio.pause();
 }
+
+
+
+
+function celToFer(){
+    
+}
