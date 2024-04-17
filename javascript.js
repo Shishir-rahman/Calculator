@@ -198,6 +198,15 @@ function ply_pos(){
 
 
 
-function celToFer(){
-    
+function ferToCel(){
+    function fToc(f){
+        return (5/9) * (f-32);
+    }
+    let c = document.getElementById("celsius").value;
+    let F_result = fToc(c);
+    document.getElementById("fer_result").innerHTML = "Result: " + F_result;
 }
+
+
+
+
