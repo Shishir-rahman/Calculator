@@ -207,6 +207,14 @@ function ferToCel(){
     document.getElementById("fer_result").innerHTML = "Result: " + F_result;
 }
 
-
+let inputF = document.getElementById("celsius");
+inputF.addEventListener("keypress", function(event){
+    if (event.key === "Enter"){
+        event.preventDefault();
+    document.getElementById("celsius_btn").click();
+    }
+}
+);
+    
 
 
