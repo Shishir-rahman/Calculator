@@ -11,38 +11,38 @@
         <h1>Calculator</h1>
         <div class="cal-cart">
             <div class="cal-head">
-                <input type="text" id="result" maxlength="10" readonly>
+                <input type="text" id="output" maxlength="10" readonly>
             </div>
             <div class="cal-body">
                 <div class="btn-row">
-                    <input type="button" class="btn-style" value="AC">
-                    <input type="button" class="btn-style" value="C">
+                    <input type="button" class="btn-style" value="AC" onclick="clear()">
+                    <input type="button" class="btn-style" value="C" onclick="clear()">
                     <input type="button" class="btn-style" value="%">
-                    <input type="button" class="btn-style" value="/">
+                    <input type="button" class="btn-style" value="/" onclick="ApeandToDisplay('/')" id="operator">
                 </div>
                 <div class="btn-row">
-                    <input type="button" class="btn" value="7">
-                    <input type="button" class="btn" value="8">
-                    <input type="button" class="btn" value="9">
-                    <input type="button" class="btn-style" value="*">
+                    <input type="button" class="btn" value="7" onclick="ApeandToDisplay('7')">
+                    <input type="button" class="btn" value="8" onclick="ApeandToDisplay('8')">
+                    <input type="button" class="btn" value="9" onclick="ApeandToDisplay('9')">
+                    <input type="button" class="btn-style" value="*" onclick="ApeandToDisplay('*')" id="operator">
                 </div>
                 <div class="btn-row">
-                    <input type="button" class="btn" id="four" value="4">
-                    <input type="button" class="btn" value="5">
-                    <input type="button" class="btn" value="6">
-                    <input type="button" class="btn-style" value="-">
+                    <input type="button" class="btn" id="four" value="4" onclick="ApeandToDisplay('4')">
+                    <input type="button" class="btn" value="5" onclick="ApeandToDisplay('5')">
+                    <input type="button" class="btn" value="6" onclick="ApeandToDisplay('6')">
+                    <input type="button" class="btn-style" value="-" onclick="ApeandToDisplay('-')" id="operator">
                 </div>
                 <div class="btn-row">
-                    <input type="button" onclick="btn1()" class="btn" id="one" value="1">
-                    <input type="button" class="btn" id="two" value="2">
-                    <input type="button" class="btn" id="three" value="3">
-                    <input type="button" class="btn-style" value="+">
+                    <input type="button" class="btn" id="one" value="1" onclick="ApeandToDisplay('1')">
+                    <input type="button" class="btn" id="two" value="2" onclick="ApeandToDisplay('2')">
+                    <input type="button" class="btn" id="three" value="3" onclick="ApeandToDisplay('3')">
+                    <input type="button" class="btn-style" value="+" onclick="ApeandToDisplay('+')" id="operator">
                 </div>
                 <div class="btn-row">
-                    <input type="button" class="btn" value=".">
-                    <input type="button" class="btn" value="0">
+                    <input type="button" class="btn" value="." onclick="ApeandToDisplay('.')">
+                    <input type="button" class="btn" value="0" onclick="ApeandToDisplay('0')">
                     <input type="button" class="btn" value="+/-">
-                    <input type="button" class="btn-style-2" value="=">
+                    <input type="button" class="btn-style-2" value="=" onclick="result()">
                 </div>
             </div>
         </div>

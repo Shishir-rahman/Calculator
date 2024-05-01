@@ -1,17 +1,14 @@
 
-let button = document.getElementById("result") 
-
-function btn1(){
+let output = document.getElementById("output");
 
 
-    button.value = 1;
+function ApeandToDisplay(input){
+    output.value += input;
 }
 
-
-
-
-
-
+function clear(){
+    output.value = "";
+}
 
 
 
@@ -168,6 +165,9 @@ highestRan(ran);
 // document.write("Total Lost: " + numberOfLost + "<br>");
 
 
+
+//Music
+
 for(let i=0; i<3; i++){
     document.querySelectorAll(".btn-music")[i].addEventListener("click", function(){
         let txt = this.innerHTML;
@@ -197,6 +197,7 @@ function ply_pos(){
 
 
 
+//Convert Fehrenheit to Celsius
 
 function ferToCel(){
     function fToc(f){
@@ -207,14 +208,6 @@ function ferToCel(){
     document.getElementById("fer_result").innerHTML = "Result: " + F_result;
 }
 
-let inputF = document.getElementById("celsius");
-inputF.addEventListener("keypress", function(event){
-    if (event.key === "Enter"){
-        event.preventDefault();
-    document.getElementById("celsius_btn").click();
-    }
-}
-);
-    
+
 
 
